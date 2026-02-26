@@ -1,0 +1,44 @@
+{
+  "name": "graph-lib",
+  "version": "0.1.0",
+  "description": "High-performance directed graph manipulation library",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "run": "tsx src/run.ts",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "driver": "node dist/run.js",
+    "driver:build": "npm run build && node dist/run.js",
+    "driver:dev": "tsx src/run.ts",
+    "driver:watch": "tsx watch src/run.ts"
+  },
+  "keywords": [
+    "graph",
+    "directed-graph",
+    "algorithms",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

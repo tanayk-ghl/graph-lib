@@ -1,0 +1,120 @@
+%% rich_complex_original
+%% nodeCount: 56
+%% edgeCount: 55
+%% nodeList: A,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,AX,AY,AZ,B,BA,BB,BC,BD,BE,C,D,E,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+%% edgeList: A->B,AA->T,AB->AC,AC->AD,AC->AE,AD->AF,AE->AG,AH->AI,AI->AJ,AI->AK,AJ->AL,AK->AM,AN->AO,AO->AP,AO->AQ,AP->AR,AQ->AS,AT->AU,AU->AV,AU->AW,AV->AX,AW->AY,AZ->BA,B->C,BA->BB,BA->BC,BB->BD,BC->BE,C->D,C->E,D->G,E->H,G->N,H->I,J->A,K->L,K->M,L->O,M->P,N->K,O->U,P->AA,Q->R,Q->S,R->AB,S->AH,T->V,T->W,U->Q,V->X,W->AN,X->Y,X->Z,Y->AT,Z->AZ
+%% edgeCount: 55
+%% nodeCount: 56
+%% validationIsValid: true
+flowchart TD
+  node_A["A\nLINEAR_NODE"]
+  node_AA["AA\nLINEAR_NODE"]
+  node_AB["AB\nLINEAR_NODE"]
+  node_AC["AC\nTRANSITIVE_PARENT"]
+  node_AD["AD\nTRANSITION_BRANCH"]
+  node_AE["AE\nTRANSITION_BRANCH"]
+  node_AF["AF\nLINEAR_NODE"]
+  node_AG["AG\nLINEAR_NODE"]
+  node_AH["AH\nLINEAR_NODE"]
+  node_AI["AI\nTRANSITIVE_PARENT"]
+  node_AJ["AJ\nTRANSITION_BRANCH"]
+  node_AK["AK\nTRANSITION_BRANCH"]
+  node_AL["AL\nLINEAR_NODE"]
+  node_AM["AM\nLINEAR_NODE"]
+  node_AN["AN\nLINEAR_NODE"]
+  node_AO["AO\nTRANSITIVE_PARENT"]
+  node_AP["AP\nTRANSITION_BRANCH"]
+  node_AQ["AQ\nTRANSITION_BRANCH"]
+  node_AR["AR\nLINEAR_NODE"]
+  node_AS["AS\nLINEAR_NODE"]
+  node_AT["AT\nLINEAR_NODE"]
+  node_AU["AU\nTRANSITIVE_PARENT"]
+  node_AV["AV\nTRANSITION_BRANCH"]
+  node_AW["AW\nTRANSITION_BRANCH"]
+  node_AX["AX\nLINEAR_NODE"]
+  node_AY["AY\nLINEAR_NODE"]
+  node_AZ["AZ\nLINEAR_NODE"]
+  node_B["B\nLINEAR_NODE"]
+  node_BA["BA\nTRANSITIVE_PARENT"]
+  node_BB["BB\nTRANSITION_BRANCH"]
+  node_BC["BC\nTRANSITION_BRANCH"]
+  node_BD["BD\nLINEAR_NODE"]
+  node_BE["BE\nLINEAR_NODE"]
+  node_C["C\nTRANSITIVE_PARENT"]
+  node_D["D\nTRANSITION_BRANCH"]
+  node_E["E\nTRANSITION_BRANCH"]
+  node_G["G\nLINEAR_NODE"]
+  node_H["H\nLINEAR_NODE"]
+  node_I["I\nLINEAR_NODE"]
+  node_J["J\nSTART_NODE"]
+  node_K["K\nTRANSITIVE_PARENT"]
+  node_L["L\nTRANSITION_BRANCH"]
+  node_M["M\nTRANSITION_BRANCH"]
+  node_N["N\nLINEAR_NODE"]
+  node_O["O\nLINEAR_NODE"]
+  node_P["P\nLINEAR_NODE"]
+  node_Q["Q\nTRANSITIVE_PARENT"]
+  node_R["R\nTRANSITION_BRANCH"]
+  node_S["S\nTRANSITION_BRANCH"]
+  node_T["T\nTRANSITIVE_PARENT"]
+  node_U["U\nLINEAR_NODE"]
+  node_V["V\nTRANSITION_BRANCH"]
+  node_W["W\nTRANSITION_BRANCH"]
+  node_X["X\nTRANSITIVE_PARENT"]
+  node_Y["Y\nTRANSITION_BRANCH"]
+  node_Z["Z\nTRANSITION_BRANCH"]
+  node_A --> node_B
+  node_AA --> node_T
+  node_AB --> node_AC
+  node_AC --> node_AD
+  node_AC --> node_AE
+  node_AD --> node_AF
+  node_AE --> node_AG
+  node_AH --> node_AI
+  node_AI --> node_AJ
+  node_AI --> node_AK
+  node_AJ --> node_AL
+  node_AK --> node_AM
+  node_AN --> node_AO
+  node_AO --> node_AP
+  node_AO --> node_AQ
+  node_AP --> node_AR
+  node_AQ --> node_AS
+  node_AT --> node_AU
+  node_AU --> node_AV
+  node_AU --> node_AW
+  node_AV --> node_AX
+  node_AW --> node_AY
+  node_AZ --> node_BA
+  node_B --> node_C
+  node_BA --> node_BB
+  node_BA --> node_BC
+  node_BB --> node_BD
+  node_BC --> node_BE
+  node_C --> node_D
+  node_C --> node_E
+  node_D --> node_G
+  node_E --> node_H
+  node_G --> node_N
+  node_H --> node_I
+  node_J --> node_A
+  node_K --> node_L
+  node_K --> node_M
+  node_L --> node_O
+  node_M --> node_P
+  node_N --> node_K
+  node_O --> node_U
+  node_P --> node_AA
+  node_Q --> node_R
+  node_Q --> node_S
+  node_R --> node_AB
+  node_S --> node_AH
+  node_T --> node_V
+  node_T --> node_W
+  node_U --> node_Q
+  node_V --> node_X
+  node_W --> node_AN
+  node_X --> node_Y
+  node_X --> node_Z
+  node_Y --> node_AT
+  node_Z --> node_AZ
